@@ -80,12 +80,10 @@ box-shadow:0 0 10px black;
 
 <body>
 
-<!-- Birthday Music -->
 <audio id="music" loop>
 <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_8c6e6d9b8a.mp3?filename=happy-birthday-to-you-piano-version-13976.mp3" type="audio/mpeg">
 </audio>
 
-<!-- floating balloons -->
 <div class="balloon" style="left:10%;background:red;"></div>
 <div class="balloon" style="left:25%;background:yellow;"></div>
 <div class="balloon" style="left:40%;background:blue;"></div>
@@ -93,13 +91,11 @@ box-shadow:0 0 10px black;
 <div class="balloon" style="left:70%;background:purple;"></div>
 <div class="balloon" style="left:85%;background:orange;"></div>
 
-<!-- Page 1 -->
 <section id="page1">
 <h1>Raifa’s Birthday Surprise 🎉</h1>
 <button onclick="showPage2()">🎁 Click for a Surprise</button>
 </section>
 
-<!-- Page 2 -->
 <section id="page2" style="display:none;">
 <h1>Pop the Balloons 🎈</h1>
 <h2 id="score">Score: 0</h2>
@@ -111,7 +107,6 @@ Go to Birthday Page 🎂
 </button>
 </section>
 
-<!-- Page 3 -->
 <section id="page3" style="display:none;">
 <h1>🎂 Happy 7th Birthday Raifa! 🎂</h1>
 
@@ -119,15 +114,13 @@ Go to Birthday Page 🎂
 Dear Raifa,<br><br>
 May your birthday be full of joy, cake, fun and happiness! 🎂🎁<br>
 Have the most magical birthday ever! ✨<br><br>
-From your loving Hishamey ❤️
+From your loving uncle ❤️
 </p>
 
 <div class="gallery">
-<img src="raifa1.png.jpg">
-<img src="raifa2.png.jpg">
-<img src="raifa3.png.jpg">
-<img src="raifa4.png.jpg">
-<img src="raifa5.png.jpg">
+<img src="raifa1.jpg">
+<img src="raifa2.jpg">
+<img src="raifa3.jpg">
 </div>
 
 </section>
@@ -137,12 +130,9 @@ From your loving Hishamey ❤️
 let score = 0;
 
 function showPage2(){
-
 document.getElementById("music").play();
-
 document.getElementById("page1").style.display="none";
 document.getElementById("page2").style.display="flex";
-
 createBalloons();
 }
 
